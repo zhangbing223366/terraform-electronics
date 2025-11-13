@@ -4,5 +4,5 @@ variable "SNOWFLAKE_PASSWORD" {
   sensitive = true
 }
 variable "SNOWFLAKE_REGION" {
-  default = "us-east-1" # 改成你实际的 region
+  default = "AWS_AP_NORTHEAST_1" # 改成你实际的 region
 }
