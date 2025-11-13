@@ -15,5 +15,5 @@ provider "snowflake" {
 }
 
 resource "snowflake_database" "my_db" {
-  name = "TEST_DB2"
+  name = "TEST_DB_2"
 }
