@@ -1,18 +1,15 @@
 variable "SNOWFLAKE_ACCOUNT" {
   description = "Your Snowflake account identifier"
+  type        = string
 }
 
 variable "SNOWFLAKE_USERNAME" {
   description = "Snowflake username"
+  type        = string
 }
 
 variable "SNOWFLAKE_PASSWORD" {
   description = "Snowflake password"
+  type        = string
   sensitive   = true
-}
-
-# region 可以留空或者设置默认值
-variable "SNOWFLAKE_REGION" {
-  description = "Snowflake region (optional)"
-  default     = ""
 }
