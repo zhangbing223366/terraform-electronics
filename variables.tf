@@ -1,8 +1,18 @@
-variable "SNOWFLAKE_ACCOUNT" {}
-variable "SNOWFLAKE_USERNAME" {}
-variable "SNOWFLAKE_PASSWORD" {
-  sensitive = true
+variable "SNOWFLAKE_ACCOUNT" {
+  description = "Your Snowflake account identifier"
 }
+
+variable "SNOWFLAKE_USERNAME" {
+  description = "Snowflake username"
+}
+
+variable "SNOWFLAKE_PASSWORD" {
+  description = "Snowflake password"
+  sensitive   = true
+}
+
+# region 可以留空或者设置默认值
 variable "SNOWFLAKE_REGION" {
-  default = "AWS_AP_NORTHEAST_1" # 改成你实际的 region
+  description = "Snowflake region (optional)"
+  default     = ""
 }
