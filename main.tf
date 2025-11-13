@@ -7,6 +7,11 @@ terraform {
   }
 }
 
+# 声明输入变量
+variable "SNOWFLAKE_ACCOUNT" {}
+variable "SNOWFLAKE_USERNAME" {}
+variable "SNOWFLAKE_PASSWORD" {}
+
 provider "snowflake" {
   account  = var.SNOWFLAKE_ACCOUNT
   username = var.SNOWFLAKE_USERNAME
