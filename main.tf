@@ -17,13 +17,3 @@ provider "snowflake" {
 resource "snowflake_database" "my_db" {
   name = "TEST_DB"
 }
-
-resource "snowflake_schema" "my_schema" {
-  name     = "TEST_SCHEMA"
-  database = snowflake_database.my_db.name
-}
-
-resource "snowflake_warehouse" "my_wh" {
-  name      = "TEST_WAREHOUSE"
-  warehouse_size = "XSMALL"
-}
